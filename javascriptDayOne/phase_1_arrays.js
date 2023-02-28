@@ -42,4 +42,4 @@ Array.prototype.transpose = function() {
     return newArr;
 }
 
-console.log(tranposeArray.transpose());
+// console.log(tranposeArray.transpose());

@@ -7,5 +7,15 @@ Array.prototype.myEach = function(callback) {
   }
 }
 
-arr.myEach(ele => console.log(ele));
+// arr.myEach(ele => console.log(ele));
 
+
+Array.prototype.myMap = function(callback) {
+  let outArr = [];
+  for (let i = 0; i < this.length; i++ ) {
+    outArr.push(callback(this[i]));
+  }
+  return outArr;
+}
+
+arr.myMap(ele => Math.sqrt(ele));
