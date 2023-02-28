@@ -26,5 +26,20 @@ Array.prototype.twoSum = function() {
   return pairs;
 }
 
-console.log(twoSumArr.twoSum());
+// console.log(twoSumArr.twoSum());
 
+const tranposeArray = [[1, 2], [3, 4]]
+
+Array.prototype.transpose = function() {
+    let newArr = [];
+    this.forEach((row, i1) => {
+        let newRow = [];
+        this.forEach((col, i2) => {
+            newRow.push(this[i2][i1]);
+        })
+        newArr.push(newRow);
+    })
+    return newArr;
+}
+
+console.log(tranposeArray.transpose());
